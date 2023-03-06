@@ -4,6 +4,8 @@ import clsx from "clsx";
 
 import hero from "/public/assets/images/index-hero.png";
 import circle from "/public/assets/svg/circle-header.svg";
+import hat from "/public/assets/images/hat.png";
+import horse from "/public/assets/images/horse.png";
 
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
@@ -49,16 +51,35 @@ function SearchBar() {
 function Header() {
   return (
     <>
-      <header className={clsx("relative my-6 mx-4")}>
-        <div className={clsx(`pt-36`)}>
+      <header className={clsx("relative my-6")}>
+        <Image
+          src={hat}
+          alt="hat"
+          className={clsx("absolute left-0 inset-y-2/4")}
+        />
+        <div className={clsx(`pt-36 px-10`)}>
           <h1
             className={clsx(
-              `font-bold text-[64px] text-primaryColour ${font.className}`
+              `font-bold text-[64px] text-primaryColour ${font.className} relative inline-flex px-10 py-2`
             )}
+            style={{
+              backgroundImage: "url('/assets/svg/line.svg')",
+              backgroundRepeat: "no-repeat",
+              rotate: "-8.72deg",
+            }}
           >
+            <Image
+              src={horse}
+              alt="horse"
+              className="absolute -top-4 -right-4"
+            />
             Fun to care,
           </h1>
-          <h1 className={clsx(`font-black text-[64px] ${font.className}`)}>
+          <h1
+            className={clsx(
+              `font-black text-[64px] ${font.className} text-[#FBA628] ml-16 `
+            )}
+          >
             Comfy Feel
           </h1>
           <p
