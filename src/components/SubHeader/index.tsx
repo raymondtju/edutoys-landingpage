@@ -4,16 +4,23 @@ import { Nunito } from "next/font/google";
 import clsx from "clsx";
 const font = Nunito({ subsets: ["latin"] });
 
-type SubHeaderProps = {
+interface SubHeaderProps {
   part: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   align?: "left" | "center";
-};
+  className?: string;
+}
 
-function SubHeader({ part, title, description, align }: SubHeaderProps) {
+function SubHeader({
+  part,
+  title,
+  description,
+  align,
+  className,
+}: SubHeaderProps) {
   return (
-    <div className={clsx(`text-${align}`)}>
+    <div className={clsx(`text-${align} ${className}`)}>
       <p className={clsx("text-custom16px font-semibold text-primaryColour")}>
         {part}
       </p>
