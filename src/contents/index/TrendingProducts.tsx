@@ -52,12 +52,12 @@ const TrendingProductsData = [
 
 function TrendingProducts() {
   return (
-    <div className={clsx("relative mx-2 mt-16")}>
-      <Image
-        src={populerbg}
-        alt="populerbg"
-        className="absolute w-auto min-w-full shrink-0 -z-10"
-      />
+    <div
+      className={clsx("bg-center bg-no-repeat bg-cover py-14")}
+      style={{
+        backgroundImage: `url(${populerbg.src})`,
+      }}
+    >
       <Layout>
         <SubHeader
           part="Trending Products"
