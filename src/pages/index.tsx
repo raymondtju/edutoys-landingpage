@@ -13,9 +13,9 @@ export default function Home() {
         <title>EduToys Shop</title>
         <meta name="description" content="EduToys Shop" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/images/logo.png" />
       </Head>
-      <main className={inter.className}>
+      <main className={`${inter.className}`}>
         <IndexContent />
       </main>
     </>
