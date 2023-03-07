@@ -45,7 +45,7 @@ function OurOffer() {
       <Layout>
         <SubHeader part="Our Offer" align="center" />
 
-        <div className="grid items-center grid-cols-2">
+        <div className="grid items-center grid-cols-1 gap-4 md:grid-cols-2 md:gap-0">
           <Image src={offerimg} alt="boneka" priority />
           <div className="space-y-4">
             {OurOfferData.map((item, index) => (
@@ -59,7 +59,13 @@ function OurOffer() {
                   backgroundColor: `${item.bg}`,
                 }}
               >
-                <Image src={item.svg} alt="isvg" width={70} height={70} />
+                <Image
+                  src={item.svg}
+                  alt="isvg"
+                  className="w-auto h-auto"
+                  width={70}
+                  height={70}
+                />
                 <div className={clsx(`${font.className} font-bold`)}>
                   <h1
                     className={clsx(`text-2xl font-bold`)}

@@ -50,17 +50,25 @@ function TopPicks() {
         align={"center"}
       />
 
-      <div className={clsx("mt-16 pb-24 flex justify-between")}>
+      <div
+        className={clsx(
+          "mt-16 pb-24 grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 gap-x-4"
+        )}
+      >
         {TopPickData.map((data, index) => {
           return (
             <div key={index}>
               <div className="relative">
-                <Image src={data.bg} alt="Vector1" />
+                <Image
+                  src={data.bg}
+                  alt="Vector1"
+                  className="mx-auto my-auto"
+                />
 
                 <Image
                   src={data.image}
                   alt={data.title}
-                  className="absolute inset-0 mx-auto my-auto"
+                  className="absolute inset-0 w-auto h-auto mx-auto my-auto"
                   width={100}
                   height={100}
                 />

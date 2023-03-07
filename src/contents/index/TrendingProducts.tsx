@@ -107,6 +107,8 @@ function TrendingProducts() {
                   alt={data.title}
                   width={220}
                   height={220}
+                  className="w-auto h-auto"
+                  priority
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-[#FAF6F9] h-1/4 rounded-t-lg border-t-[1px] border-[#C7C7C7] space-y-1 p-2">
                   <span className="block text-xl font-bold text-center text-primaryColour">
