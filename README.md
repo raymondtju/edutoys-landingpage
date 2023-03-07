@@ -2,8 +2,8 @@
   <h1>
     Edu Toys Shop - Landing Page
     &middot;
-    <img src="https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fedutoys.vercel.app"/>
-    <img src="https://img.shields.io/github/deployments/raymondtju/edutoys-landingpage/production?label=production&style=flat-square"/>
+    <img src="https://img.shields.io/website?url=https%3A%2F%2Fedutoys.vercel.app"/>
+    <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/raymondtju/edutoys-landingpage/production?label=production">
   </h1>
 </div>
 
