@@ -29,7 +29,7 @@ function SubHeader({
       </h2>
       <p
         className={clsx(
-          `text-custom20px text-secondaryColour mt-5 w-8/12`,
+          `text-custom20px text-secondaryColour mt-5 md:w-8/12 w-full`,
           `${align === "center" ? "mx-auto" : ""}`
         )}
       >
