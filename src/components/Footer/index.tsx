@@ -106,10 +106,10 @@ function Footer() {
       }}
     >
       <Layout>
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <Image src={logo} alt="logo" className="w-[251px]" />
 
-          <div className="flex">
+          <div className="flex flex-wrap mt-8 md:mt-0">
             {linksData.map((link, index) => (
               <Fragment key={index}>
                 <div className={clsx("flex-1")}>
